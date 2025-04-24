@@ -6,3 +6,7 @@ RUN apt install apache2 -y
 COPY index.html /var/www/html 
 EXPOSE 80
 --apache2--
+
+Build docker image // docker build -t apache_image:1.0 .
+run docker image / docker run -it -d --name ap -p 9000:80  apache_image:1.0 /bin/bash
+container will be built
