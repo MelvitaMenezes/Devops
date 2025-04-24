@@ -1,0 +1,9 @@
+To check docker version / docker --version
+To check docker images / docker images
+To check docker container / docker ps or docker ps -a
+To pull nginx image / docker pull nginx
+To create container of nginx / docker run -d --rm --name nc -p 8000:80 nginx
+To check the logs of container / docker logs nc
+To inspect the attributes of the container / docker inspect nc
+To access the container / docker exec -it nc bash
+index.html location -> usr/share/nginx/html
