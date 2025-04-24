@@ -7,3 +7,5 @@ To check the logs of container / docker logs nc
 To inspect the attributes of the container / docker inspect nc
 To access the container / docker exec -it nc bash
 index.html location -> usr/share/nginx/html
+Copying from Host to Container: docker cp /path/on/host container_name:/path/in/container
+Copying from Container to Host: docker cp container_name:/path/in/container /path/on/host
