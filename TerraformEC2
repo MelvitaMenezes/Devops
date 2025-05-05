@@ -1,0 +1,25 @@
+create a folder for terraform file. 
+create main.tf in folder.
+
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_instance" "example" {
+  ami = "ami-062f0cc54dbfd8ef1"
+  instance_type = "t2.micro"
+  key_name = "jumpserver"
+  vpc_security_group_ids = ["sg-07a2d83fb2aec3a0e"] 
+  subnet_id = "subnet-07335a42d57ef4c92"
+
+  tags = {
+    Name = "franz"
+  }
+
+}
+
+
+Commands :
+terraform validate
+terraform plan
+terraform apply
