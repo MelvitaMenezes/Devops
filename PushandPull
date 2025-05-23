@@ -1,0 +1,20 @@
+install git
+git init
+set user name and email
+create file
+git status
+git add
+git commit -m ""
+git remote add origin https://github.com/MelvitaMenezes/Melvita.git
+git pull origin main
+---- if divergent error ---
+git config pull.rebase false
+git config pull.rebase true
+git config pull.ff only
+
+--- Push files --
+git branch --set-upstream-to=origin/main
+
+-- rebase error --
+git rebase
+git push origin HEAD:main
